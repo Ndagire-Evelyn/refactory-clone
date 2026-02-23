@@ -1,0 +1,465 @@
+/*
+ Primary Purple: #6B2D8F (headings, buttons, branding)
+Accent Teal/Green: #00BFA5 (subheadings, highlights)
+Button Yellow/Lime: #C0FF33 (CTA buttons)
+Footer Dark: #2C1A4D or similar (footer background)
+White: #FFFFFF (text on dark backgrounds, button backgrounds)
+Light Gray: #f5f5f5 (section backgrounds) 
+
+ */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  padding-top: 56px;
+  background-color: #000000;
+}
+
+:root {
+  --btn-yllw: #c6c628;
+  --font-bold: 700;
+  --font-normal-bold: 100;
+  --font-normal-bolder: 500;
+  --primary-color: #663367;
+  --accent-green: #38bfc3;
+  --footer-bg: #2c1a4d;
+  --text-bg-blac: #ffffff;
+  --text-bg-white: #000000;
+  --text-bigger:30px;
+  --text-big:20px;
+  --bg-gray:#F4F7FA;
+}
+
+/* Stling for all p elements */
+p {
+  font-size: 16px;
+  font-weight: 10;
+  letter-spacing: 0.8px;
+  line-height: 26px;
+  color:rgb(52, 50, 50);
+  margin-top: 18px;
+}
+/* Stling for all buttons */
+button {
+  color: var(--text-bg-blac);
+  padding: 12px 18px;
+  border: none;
+  font-weight:var(--font-bold);
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Styling the header */
+header {
+  padding: 8px;
+  right: 0;
+  top: 0;
+  min-width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  font-weight: var(--font-bold);
+  text-align: center;
+  background-color: var(--text-bg-blac);
+  z-index: 200;
+}
+
+/* Styling the logo */
+header .logo {
+  max-width: 40%;
+}
+
+/* Styling the nav */
+nav {
+  width: 100%;
+  margin-right: 8px;
+}
+
+/* Styling the lists */
+.ul {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  align-items: center;
+}
+
+.ul li {
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+
+.ul li i {
+  font-size: 10px;
+}
+
+.ul li .search {
+  font-size: 20px;
+  font-weight: 600;
+  border: 2px solid #c6c628;
+  background-color: var(--btn-yllw);
+  border-radius: 20px;
+  padding: 8px;
+}
+
+/* ==========HERO STLYE============= */
+.hero-section {
+  min-height: 85vh;
+  background-image:
+    url("imags/students.jpg");
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+/* ==========HERO CONTENT STLYE============= */
+.hero-content {
+ text-align: center;
+  position: absolute;
+  bottom: 10%;
+}
+
+.hero-content .hero-main-text {
+color: var(--text-bg-blac);
+font-size: 25px;
+margin-bottom: 30px;
+}
+.hero-content .tech-text {
+color: var(--text-bg-blac);
+font-size: 24px;
+margin-bottom: 30px;
+}
+/* The hero buttons */
+.hero-main-btns{
+  display: flex; 
+  text-align: center; 
+  justify-content: center;
+}
+
+
+
+.hero-main-btns .partner
+{
+  margin-right: 20px;
+  background-color: var(--primary-color)
+}
+.hero-main-btns .explore {
+  margin-right: 20px;
+  background-color: var(--btn-yllw)
+}
+
+.hero-main-btns .talent {
+  margin-right: 20px;
+  color: var(--primary-color);
+  background-color: var(--text-bg-blac)
+}
+ /*--===================START OF SECTIONS===========================-*/
+section {
+  width: 100%;
+}
+/* SECTION  1 */
+ .section-1 {
+  min-height:70vh;
+  background-color: var(--bg-gray);
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+  gap: 8px;
+  padding: 45px 8px;
+}
+
+/* Left section content */
+.left-div-content {
+  margin-left: 40px;
+  margin-right: 20px;
+}
+.left-div-content h2{
+  color: var(--primary-color);
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.left-div-content h3{
+  color: var(--accent-green);
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.left-div-content p{
+  font-size: 16px;
+  font-weight: 10;
+  letter-spacing: 1px;
+  color:rgb(52, 50, 50);
+  margin-top: 18px;
+}
+
+.left-div-content button{
+margin-top: 18px;
+background-color: var(--btn-yllw);
+}
+
+.right-div-content   {
+  align-items: center;
+}
+
+.right-div-content img  {
+  width: 80%;
+}
+
+
+/*=================SECTION  2====================== */
+.section-2 {
+  background-color: #ffffff;
+  padding-top: 40px;
+  padding:50px 70px;
+}
+.section-2-upper-text h2
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.section-2 .start-career{
+  text-transform: capitalize; /*Capitalizes starting letters  */
+  font-size: var(--text-big);
+  color: var(--accent-green);
+}
+.section-2 .explore-courses{
+  font-size: var(--text-bigger);
+color: var(--primary-color);
+margin-top: 8px;
+margin-bottom: 8px;
+}
+
+/* Grid sections to explore courses */
+.section-2-grid-content {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.section-2-grid-content img {
+  width: 90%;
+  height: 30vh;
+  object-fit: cover;
+}
+.section-2-grid-content h2 {
+  font-size: 21px;
+  margin: 12px 0 10px 0;
+  color: var(--primary-color);
+}
+.section-2-grid-content p {
+  margin-bottom: 16px;
+}
+.section-2-grid-content button {
+  background-color: var(--btn-yllw);
+}
+
+
+/*============================== SECTION  3========================================= */
+.section-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+  background-color: #002A48;
+  padding: 80px;
+}
+.section-3-left-div img {
+  max-width: 20%;
+}
+/* Right grid section 3 */
+.section-3-right-div {
+  grid-template-rows: 1fr 3fr;
+  align-items: center;
+}
+
+/* Right Counting text section 3 */
+.section-3-main-text {
+   text-transform: capitalize;
+   color: var(--text-bg-blac);
+}
+
+.section-3-count-grid{
+  display: grid;
+  grid-template-columns:repeat(auto-fill ,minmax(50%,1fr));
+margin-top: 20px;
+}
+.count h1 {
+  color: var(--text-bg-blac);
+  font-size: 80px;
+  font-weight: 500;
+  margin-top:20px ;
+}
+.count p {
+  color: var(--text-bg-blac);
+  margin-top: 4px;
+
+}
+.refactory {
+  border-color: #ffffff;
+  border-style: solid;
+  align-items: center;
+  height: 100px; width: 100%;
+}
+.refactory1 {
+   border-color: #ffffff;
+  border-style: solid;
+  align-items: center;
+  height: 100px; width: 100%;
+}
+/* ===============SECTION 4================ */
+
+.section-4-left-div h2 {
+  color: #0e4b78;
+}
+.section-4-left-div h3 {
+  color: var(--text-bg-white);
+}
+/* Editing the 10X Partners */
+.D10X-partners {
+  display: flex;
+margin:20px 15px;
+}
+
+
+.D10X-partners img{
+  
+  max-width: 20%;
+}
+
+/* ==============================SECTION 5===================== */
+
+.section-5 {
+  height: 70vh;
+  background-image:linear-gradient(180deg,rgba(0, 0, 0, 0.005),#38bec364) , url("imags/sumit.jpeg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+ 
+}
+
+.section-5-content {
+  justify-content: space-between;
+  position: absolute;
+  bottom: 10px;
+  min-width: 100%;
+}
+.section-5-content-inner {
+  display: flex;
+  padding: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.section-5-content div img {
+  max-width: 250px;
+}
+
+.section-5-content div h1 {
+  color: var(--text-bg-blac);
+  font-size: 45px;
+align-items: center;
+justify-content: center;
+}
+.section-5-content div button {
+background-color: var(--btn-yllw);
+}
+
+/* ======================FOOTER================== */
+footer {
+  padding: 40px 50px 12px 50px;
+  background: linear-gradient(90deg,  #2c1a4d,#663367);
+}
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 15px;
+}
+/* Footer div 1 */
+.footer-div-1 .logo {
+  max-width: 50%;
+}
+.footer-div-1 p {
+  color: var(--text-bg-blac);
+  margin-bottom: 25px;
+}
+.nav-lincs nav{
+  display: inline-flex;
+
+}
+ .nav-lincs nav .icon{
+margin-left:8px;
+color: #ffffff;
+}
+
+ /* FOOOTER 2 */
+ footer h2 {
+  color: var(--accent-green);
+  font-size: var(--text-big);
+  margin-bottom: 12px;
+ }
+ 
+  .footer-div-2 a {
+    display: block;
+    text-decoration: none;
+    color: var(--text-bg-blac);
+    font-size: 16px;
+  font-weight: 10;
+  letter-spacing: 0.8px;
+  margin-top: 10px;
+}
+.footer-div-2 a:hover {
+    color: var(--accent-green);
+  
+}
+  
+  
+  .footer-div-3 a {
+    display: block;
+    text-decoration: none;
+    color: var(--text-bg-blac);
+    font-size: 16px;
+    font-weight: 10;
+    letter-spacing: 0.8px;
+    margin-top: 10px;
+  }
+  
+
+  .footer-div-3 a i{
+margin-right: 5px; 
+color: var(--accent-green);
+}
+
+.footer-div-4 p{
+  color: var(--bg-gray);
+}
+.footer-div-4 .location{
+  margin-top: 12px;
+  font-size: 17px;
+}
+
+.line {
+  color: var(--bg-gray);
+}
+
+.COPY-div {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.COPY {
+  color: var(--bg-gray);
+  margin-top: 25px;
+  margin-top: 12px;
+  width: fit-content;
+}
